@@ -1,0 +1,34 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>authorization_registration</title>
+	<link rel="stylesheet" href="{% static 'css/style_authorization.css' %}" media="screen" type="text/css" />
+</head>
+<body>
+   
+<div class="login-page">
+    <div class="form">
+
+              <form class="register-form" method="post" action="{%url 'register'%}">
+                {% csrf_token %}
+                {%for fild in user_form%}
+                   <span style="color: red;">{{fild.errors}}</span>
+                    {{fild.label_tag}}
+                    {{fild}}
+                {%endfor%}
+                <!-- <input type="text" placeholder="Имя">
+                <input type="password" placeholder="Пароль">
+                <input type="text" placeholder="Email address"> -->
+                <button type="submit">Создать</button>
+                <p class="message">У вас уже есть аккаунт? -> <a href="{%url 'login'%}">Войти</a></p>
+                <p class="message"><a href="{%url 'index'%}">Вернутся на главную страницу</a></p>
+              </form>
+
+            </div>
+        </div>
+</body>
+</html>

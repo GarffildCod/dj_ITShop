@@ -1,0 +1,349 @@
+{% extends 'base-page.html' %}	
+{% load static %}
+
+{% block title %}
+	Techmax - IT Solutions	
+{% endblock title %}
+
+{% block container %}
+	<!-- Start Home Section -->
+	<div class="home-area">
+		<div class="d-table">
+			<div class="d-table-cell">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-md-12">
+							<div class="main-banner-content">
+								<h1>Погрузитесь в инновации с Trusted <span class="color-text">Technology Solutions</span></h1>
+								<p>Комплексная экспертиза в области ИТ-инфраструктуры, внедрении информационных систем, создании программных решений и сервисной поддержки.</p>
+								<div class="banner-btn">
+									<a href="{%url 'category'%}" class="default-btn-one">
+										Наш магазин
+                                        <span></span>
+                                    </a>
+									<a class="default-btn" href="{%url 'contact'%}">
+                                        Связаться с нами 
+                                        <span></span>
+                                    </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<div class="banner-image">
+								<img src="{% static 'img/home-font.png' %}" alt="image">
+							</div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grey-cr"></div>
+	</div>
+	<!-- End Home Section -->
+	
+	<!-- Start Services Section -->
+	<section class="services-section pt-70 pb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services-item">
+						<div class="services-icon">
+							<i class="pe-7s-tools"></i>
+						</div>
+						<h3>ИТ-ИНФРАСТРУКТУРА</h3>
+						<p>Мы создаем технологический ландшафт для заказчика с учетом потребностей и особенностей его бизнеса: отраслевой специализации, существующей ИТ-экосистемы</p>
+						<div class="services-btn-link">
+							<a href="{%url 'blog'%}" class="services-link">Читать далее</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services-item">
+						<div class="services-icon">
+							<i class="pe-7s-display1"></i>
+						</div>
+						<h3>БИЗНЕС-РЕШЕНИЯ</h3>
+						<p>Мы помогаем компаниям переходить на новую ступень технологической зрелости бизнеса, повышать конкурентоспособность и эффективность.</p>
+						<div class="services-btn-link">
+							<a href="{%url 'blog'%}" class="services-link">Читать далее</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services-item">
+						<div class="services-icon">
+							<i class="pe-7s-share"></i>
+						</div>
+						<h3>ДАТА-ЦЕНТРЫ</h3>
+						<p>Мы более 20 лет проектируем и строим дата-центры для любых бизнес-задач: создание облачных хранилищ, обеспечение безопасности данных</p>
+						<div class="services-btn-link">
+							<a href="{%url 'blog'%}" class="services-link">Читать далее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Services Section -->
+	
+	<!-- Start Counter Section -->
+	<section class="counter-area section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 counter-item">
+					<div class="single-counter">
+						<div class="counter-contents">
+							<h2>
+								<span class="counter-number">23</span>
+								<span>+</span>
+							</h2>
+							<h3 class="counter-heading">Года опыта</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 counter-item">
+					<div class="single-counter">
+						<div class="counter-contents">
+							<h2>
+								<span class="counter-number">500</span>
+							</h2>
+							<h3 class="counter-heading">Завершенных проекта</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 counter-item">
+					<div class="single-counter">
+						<div class="counter-contents">
+							<h2>
+								<span class="counter-number">100</span>
+								<span>+</span>
+							</h2>
+							<h3 class="counter-heading">Сотрудников</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 counter-item">
+					<div class="single-counter">
+						<div class="counter-contents">
+							<h2>
+								<span class="counter-number">300</span>
+								<span>+</span>
+							</h2>
+							<h3 class="counter-heading">5 - Звездочный рейтинг</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Counter Section -->
+	
+	<!-- Start Overview Section -->
+	<section class="overview-section section-padding">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="overview-content">
+						<h2>Технологический партнер</h2>
+						<p>TechMax фокусируется на ключевых отраслевых кластерах – промышленность, финансовый сектор, розничные продажи, муниципальное управление, спорт и культура. Ежегодно сотни проектов TechMax становятся системообразующими для экономики и социально-культурной сферы.</p>
+						<ul class="features-list">
+							<li> <span class="active">ПОСТАВЩИК КРУПНЕЙШИХ СЕТЕЙ HORECA</span></li>
+							<li> <span>ЛИДЕР  ПРОМЫШЛЕННОСТИ ПО ЦИФРОВИЗАЦИИ</span></li>
+							<li> <span>КОМПАНИЯ ИЗ ТОП-3 РИТЕЙЛЕРОВ </span></li>
+							<li> <span>ВЕДУЩИЙ ОПЕРАТОР СЕТИ ДАТА-ЦЕНТРОВ</span></li>
+							<li> <span>Более 20 ЛЕТ НАША КОМАНДА, СЕРТИФИЦИРОВАННАЯ В СООТВЕСТВИИ С СТАНДАРТОМ</span></li>
+							<li> <span>ОДНА ИЗ КРУПНЕЙШИХ КОМПАНИЙ МЕТАЛЛУРГИЧЕСКОЙ ОТРАСЛИ</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="overview-image-2">
+						<img src="{% static 'img/choose-1.png' %}" alt="image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Overview Section -->
+	
+	<!-- Start Testimonial Section -->
+	<section class="testimonial-section bg-grey section-padding">
+		<div class="container">
+			<div class="section-title">
+				<h2>Наша команда</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<div class="testimonial-slider owl-carousel owl-theme">
+						<!-- testimonials item -->
+						<div class="single-testimonial">
+							<div class="rating-box">
+								<ul>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testimonial-content">
+								<p>Новые технологии, возможность использовать и внедрять интересные инструменты. Оличные процессы, гибкий график. </p>
+							</div>
+							<div class="avatar">
+								<img src="{% static 'img/client/testimonial-1.jpg' %}" alt="testimonial images">
+							</div>
+							<div class="testimonial-bio">
+								<div class="bio-info">
+									<h3>Николай Стрельцов</h3>
+									<span>Web Developer</span>
+								</div>
+							</div>
+						</div>
+						<!-- testimonials item -->
+						<div class="single-testimonial">
+							<div class="rating-box">
+								<ul>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testimonial-content">
+								<p>Крутая компания с классными проектами, дружный коллектив, возможность роста. Много классных корпоративных и офисных бонусов</p>
+							</div>
+							<div class="avatar">
+								<img src="{% static 'img/client/testimonial-2.jpg' %}" alt="testimonial images">
+							</div>
+							<div class="testimonial-bio">
+								<div class="bio-info">
+									<h3>Алина Федорова</h3>
+									<span>Architect</span>
+								</div>
+							</div>
+						</div>
+						<!-- testimonials item -->
+						<div class="single-testimonial">
+							<div class="rating-box">
+								<ul>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+									<li><i class="fa fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testimonial-content">
+								<p>Крутая компания с классными проектами, дружный коллектив, возможность роста. Много классных корпоративных и офисных бонусов</p>
+							</div>
+							<div class="avatar">
+								<img src="{% static 'img/client/testimonial-3.jpg' %}" alt="testimonial images">
+							</div>
+							<div class="testimonial-bio">
+								<div class="bio-info">
+									<h3>Mario Houston</h3>
+									<span>Social Worker</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Testimonial Section -->
+	
+	<!-- Start Hire Section -->
+	<section class="hire-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 col-md-12">
+					<div class="hire-content">
+						<h2>Присоединяйся к команде TechMax</h2>
+						<p>В TechMax есть всё необходимое для постоянного профессионального роста сотрудников. Мы уверены, что программы обучения, регулярное повышение квалификации, а также поддержка корпоративной культуры помогают нашим специалистам предлагать инновационные идеи клиентам.</p>
+						<div class="hire-btn">
+							<a class="default-btn-one" href="{%url 'contact'%}">Связаться с нами <span></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Hire Section -->
+	
+	<!-- Start Blog Section -->
+	<section class="blog-section pt-100 pb-70">
+		<div class="container">
+			<div class="section-title">
+				<h2>Новости о нас</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-item">
+						<div class="blog-image">
+							<a href="single-blog.html">
+								<img src="{% static 'img/blog/blog-1.jpg' %}" alt="image">
+							</a>
+						</div>
+						<div class="single-blog-item">
+							<div class="blog-content">
+								<h3>
+                                    <a href="single-blog.html">
+										Самые большие тенденции в технологиях
+                                    </a>
+                                </h3>
+								<p>TechMax представил спецпроект «True Story: ритейл спешит на помощь» на День работника торговли</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-item">
+						<div class="blog-image">
+							<a href="single-blog.html">
+								<img src="{% static 'img/blog/blog-2.jpg' %}" alt="image">
+							</a>
+						</div>
+						<div class="single-blog-item">
+							<div class="blog-content">
+								<h3>
+									<a href="single-blog.html">
+										Самые большие тенденции в технологиях
+                                    </a>
+								</h3>
+								<p>Облако TechMax признано одним из самых безопасных публичных облаков в РФ для финансовых организаций</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-item">
+						<div class="blog-image">
+							<a href="single-blog.html">
+								<img src="{% static 'img/blog/blog-3.jpg' %}" alt="image">
+							</a>
+						</div>
+						<div class="single-blog-item">
+							<div class="blog-content">
+								<h3>
+                                    <a href="single-blog.html">
+                                        Самые большие тенденции в технологиях
+                                    </a>
+                                </h3>
+								<p>Облако TechMax помогает крупной сети ресторанов увеличивать количество онлайн-заказов в пиковый период</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Blog Section -->
+	
+	<!-- Start Purchase Section -->
+
+	<!-- End Purchase Section -->
+	{% endblock container %}

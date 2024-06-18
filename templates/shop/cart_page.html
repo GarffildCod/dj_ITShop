@@ -1,0 +1,54 @@
+{% extends 'base-page.html' %}	
+{% load static %}
+
+{% block title %}
+Cart_page
+{% endblock title %}
+
+{% block container %}
+
+<div class="popup">
+    <div class="popup__container" id="popup_container">
+      <div class="popup__item">
+        <h1 class="popup__title">Оформление заказа</h1>
+      </div>
+      <div class="popup__item" id="popup_product_list">
+        <div class="popup__product">
+          <div class="popup__product-wrap">
+            <img
+              src="/"
+              alt="Apple IPhone 14 Pro Max 256Gb"
+              class="popup__product-image"
+            />
+            <h2 class="popup__product-title">
+              Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
+            </h2>
+          </div>
+          <div class="popup__product-wrap">
+            <div class="popup__product-price">135000</div>
+            <button class="popup__product-delete">✖</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup__item">
+        <div class="popup__cost">
+          <h2 class="popup__cost-title">Итого</h2>
+          <output class="popup__cost-value" id="popup_cost">150000</output>
+        </div>
+        <div class="popup__cost">
+          <h2 class="popup__cost-title">Скидка</h2>
+          <output class="popup__cost-value" id="popup_discount">15000</output>
+        </div>
+        <div class="popup__cost">
+          <h2 class="popup__cost-title">Итого со скидкой</h2>
+          <output class="popup__cost-value" id="popup_cost_discount"
+            >135000</output
+          >
+        </div>
+      </div>
+     
+    </div>
+  </div>
+
+
+{% endblock container %}

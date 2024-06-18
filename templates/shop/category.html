@@ -1,0 +1,344 @@
+{% extends 'base-page.html' %}	
+{% load static %}
+
+{% block title %}
+		SHOP
+{% endblock title %}
+
+{% block container %}
+
+<div class="page-title-area item-bg2">
+	<div class="d-table">
+		<div class="d-table-cell"> 
+			<div class="container">
+				<div class="page-title-content">
+					<h2>Магазин</h2>
+					<ul>
+						<li><a href="/">Главная</a>
+						</li>
+						<li><a href="{%url 'contact'%}">Связатся с нами</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+	
+<div class="container products__container">
+	<ul class="imdiz-products imdiz-products_row">
+		
+		
+		<!-- <li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="img/product_img.png" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">Xiaomi Mi 10 8/128GB Grey/Серый Global Version</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">49 900</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		<li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="img/product_img.png" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">Xiaomi Mi 10 8/128GB Grey/Серый Global Version</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">49 900</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li>
+
+
+
+
+
+		<li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="img/product_img.png" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">Xiaomi Mi 10 8/128GB Grey/Серый Global Version</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">49 900</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li>
+
+
+
+
+		<li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="img/product_img.png" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">Xiaomi Mi 10 8/128GB Grey/Серый Global Version</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">49 900</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li>
+
+
+
+
+
+		<li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="img/product_img.png" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">Xiaomi Mi 10 8/128GB Grey/Серый Global Version</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">49 900</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li>
+
+
+
+
+		<li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="img/product_img.png" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">Xiaomi Mi 10 8/128GB Grey/Серый Global Version</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">49 900</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li>
+
+
+
+
+		<li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="img/product_img.png" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">Xiaomi Mi 10 8/128GB Grey/Серый Global Version</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">49 900</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li>
+		
+		
+
+
+		
+		<li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="img/product_img.png" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">Xiaomi Mi 10 8/128GB Grey/Серый Global Version</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">49 900</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li> -->
+
+
+
+
+
+		{% for product in object_list %}
+		<li class="imdiz-product">
+			<div class="imdiz-product__inner">
+				<p class="imdiz-product__av">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span>В наличии</span>
+				</p>
+				<p >
+					{{ product.description }}
+				</p>
+				<div class="imdiz-product__image-wrap">
+					<a href="/" class="imdiz-product__img-link">
+						<img src="{{product.image_url}}" alt="Изображение продукта">
+					</a>
+					<span class="imdiz-product__discount">-17%</span>
+				</div>
+				<div class="imdiz-product__info">
+					<a href="/" class="imdiz-product__name">{{product.name}}</a>				
+					<form class="imdiz-product__compare-form">
+						<label class="imdiz-product__compare-label"><input type="checkbox" class="imdiz-product__compare-input">СРАВНИТЬ</label>
+					</form>
+					<p class="imdiz-product__price">
+						<span class="imdiz-product__cost">{{ product.price }}</span>
+						<span class="imdiz-product__currency">&#8381;</span>
+					</p>
+				</div>
+				<form class="imdiz-product__buy-form">
+					{% csrf_token %}
+					<input type="hidden">
+					<button type="submit" class="imdiz-product__submit">КУПИТЬ</button>
+				</form>
+			</div>
+		</li>
+		{% endfor %}
+
+
+
+
+
+	</ul>
+</div>
+
+
+{% endblock container %}

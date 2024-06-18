@@ -1,0 +1,35 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Authorization</title>
+	<link rel="stylesheet" href="{% static 'css/style_authorization.css' %}" media="screen" type="text/css" />
+	
+</head>
+<body>
+
+<div class="login-page">
+    <div class="form">
+      <div style="text-align: center; color: rgb(183, 39, 39); font-size: 18px;" >
+        <p>{{ attention }}</p>
+    </div>
+
+
+      <form class="login-form" action="{%url 'fill_database'%}" method="post">
+        {% csrf_token %}
+        {%if massage%}
+        <span style="color: red;">{{massage}}</span>
+        {%endif%}
+        <button>Заполнить базу данных</button>
+        <p class="message"><a href="{%url 'index'%}">Вернутся на главную</a></p>
+      </form>
+
+
+    </div>
+  </div>
+</body>
+</html>

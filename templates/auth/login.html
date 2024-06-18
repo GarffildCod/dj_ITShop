@@ -1,0 +1,32 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Authorization</title>
+	<link rel="stylesheet" href="{% static 'css/style_authorization.css' %}" media="screen" type="text/css" />
+	
+</head>
+<body>
+
+<div class="login-page">
+    <div class="form">
+    <div style="text-align: center; color: rgb(183, 39, 39); font-size: 18px;" >
+        <p>{{ attention }}</p>
+    </div>
+      <form class="login-form" action="{%url 'login'%}" method="post">
+        {% csrf_token %}
+        <span for="id_username"><input type="text" placeholder="Имя" id="id_username" name="username"></span>
+        <span for="id_password"></span><input type="password" placeholder="Пароль" id="id_password" name="password"></span>
+        <button>Войти</button>
+        <p class="message">Хотите выйти с аккаунта? -> <a href="{%url 'logout'%}">Выйти</a></p>
+        <p class="message">У вас нет аккаунта? -> <a href="{%url 'register'%}">Создать аккаунт</a></p>
+        <p class="message"><a href="{%url 'index'%}">Вернутся на главную</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

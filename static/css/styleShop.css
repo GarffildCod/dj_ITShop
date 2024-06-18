@@ -1,0 +1,108 @@
+/*  */
+
+/* Products_row page */
+
+.products__container{
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.imdiz-products{
+  width: 1090px;
+  margin-right: -10px;
+}
+.imdiz-products_row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.imdiz-product{
+  list-style: none;
+  width: 33.3%;
+  padding: 10px;    
+}
+.imdiz-product__inner{
+  padding: 20px;
+  border: 1px solid #ededed;
+  transition: all .3s;
+}
+.imdiz-product__inner:hover{
+  border-color: #5E77E7;
+}
+.imdiz-product__av{
+  text-align: center;
+  color: #6db801;
+  padding-bottom: 20px;
+}
+.imdiz-product__image-wrap{
+  position: relative;
+}
+.imdiz-product__img-link{
+  display: block;
+  text-align: center;    
+}
+.imdiz-product__discount{
+  position: absolute;
+  padding: 4px;
+  color: #fff;
+  border-radius: 9px 0 0 9px;
+  background-color: #5E77E7;
+  right: 27px;
+  top: 0;
+  font-size: 18px;    
+}
+.imdiz-product__info{
+  text-align: center;
+  padding-top: 20px;
+}
+.imdiz-product__name{
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s;
+}
+.imdiz-product__name:hover{
+  color: #5E77E7;
+}
+.imdiz-product__compare-form{
+  padding-top: 20px;
+}
+.imdiz-product__compare-input{
+  display: none;
+}
+.imdiz-product__compare-label{
+  text-transform: uppercase;
+  border-bottom: 1px dashed #000;
+  cursor: pointer;
+}
+.imdiz-product__price{
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 0;
+}
+.imdiz-product__submit{
+  background-color: #5E77E7;
+  border: 1px solid #5E77E7;
+  width: 168px;
+  height: 41px;
+  color: #fff;
+  font-size: 18px;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .3s;
+}
+.imdiz-product__submit:hover{
+  background-color: #fff;
+  color: #cb2d41;
+}
+
+
+
+
+
+
+/* Cart_page */
+
+
